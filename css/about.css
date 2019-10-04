@@ -169,12 +169,16 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin: 30px 0;
+    margin: 30px 30px 30px 0;
 }
 
 nav a {
     text-decoration: none;
     color: black;
+}
+
+nav a:hover {
+    text-shadow: 0 0 4px grey;
 }
 
 header {
@@ -218,6 +222,13 @@ header {
     margin: 20px 0;
 }
 
+.button:hover {
+    background-color: darkgrey;
+    border: 2px solid grey;
+    color: white;
+    transition: 0.6s;
+}
+
 .work-together {
     display: flex;
     flex-wrap: wrap;
@@ -241,4 +252,8 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+footer nav a:hover {
+    text-shadow: 0 0 4px lightgrey;
 }
