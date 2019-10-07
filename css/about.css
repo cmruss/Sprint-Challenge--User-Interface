@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 
 html,
@@ -185,99 +185,54 @@ header {
     margin: 20px 0;
 }
 
-.top-content {
+.about {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
+    padding: 0 20px 20px 20px;
     border-bottom: 1px dashed black;
 }
 
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;
+.about-grid {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.middle-content {
-    margin-bottom: 20px;
+.grid-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 45%;
+    margin: 20px;
     border-bottom: 1px dashed black;
 }
 
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
-}
-
-.middle-content .boxes {
+.grid-box-content {
+    margin: 20px 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
+.button {
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin: 20px 0;
+}
+
+.button:hover {
+    background-color: darkgrey;
+    border: 2px solid grey;
     color: white;
+    transition: 0.6s;
+}
+
+.work-together {
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#box1 {
-    background-color: teal;
-}
-
-#box2 {
-    background-color: gold;
-}
-
-#box3 {
-    background-color: cadetblue;
-}
-
-#box4 {
-    background-color: coral;
-}
-
-#box5 {
-    background-color: crimson;
-}
-
-#box6 {
-    background-color: forestgreen;
-}
-
-#box7 {
-    background-color: darkorchid;
-}
-
-#box8 {
-    background-color: hotpink;
-}
-
-#box9 {
-    background-color: indigo;
-}
-
-#box10 {
-    background-color: dodgerblue;
-}
-
-.bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
-}
-
-.bottom-content .text-container {
-    padding-right: 4%;
-}
-
-.bottom-content .text-container:last-child {
-    padding-right: 0;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 footer {
